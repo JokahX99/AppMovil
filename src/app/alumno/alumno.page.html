@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>RegistrApp Alumnos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">alumno</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <br><br><br><br><br><br><br><br>
+    <ion-button> Escanear Codigo QR </ion-button>
+    <br><br><br>
+    <ion-button> Revisar Asistencias </ion-button>
+    <br><br><br>
+    <ion-button (click)="contra()"> Cambiar Contraseña </ion-button>
+    <br><br><br>
+    <ion-button (click)="home()"> Cerrar Session </ion-button>
+
+  </div>
+
+</ion-content>

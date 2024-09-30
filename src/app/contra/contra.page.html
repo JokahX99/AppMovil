@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cambiar Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-label>Para cambiar la contraseña, ingrese su nombre de usuario y la nueva contraseña:</ion-label>
+    <br><br>
+    
+    <ion-label position="floating">Nombre de Usuario</ion-label>
+    <ion-input [(ngModel)]="username"></ion-input>
+    <br><br>
+    
+    <ion-label position="floating">Nueva Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="newPassword"></ion-input>
+    <br><br>
+    
+    <ion-button (click)="cambiarContrasena()">Cambiar Contraseña</ion-button>
+  </div>
+</ion-content>

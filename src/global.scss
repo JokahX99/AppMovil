@@ -1,0 +1,75 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import '@ionic/angular/css/palettes/dark.system.css';
+
+/* global.scss */
+
+// Colores del Header y Fondo
+ion-header {
+    background-color: rgb(34, 106, 220); /* Cambia a azul */
+    color: white; /* Cambia el color del texto a blanco para contraste */
+    text-align: center;
+  }
+  
+  ion-toolbar {
+    --background: rgb(34, 106, 220); /* Cambia el fondo de la barra de herramientas a azul */
+    --color: white; /* Cambia el color del texto a blanco */
+  }
+  
+  ion-content {
+    --background: white; /* Cambia el fondo del contenido a blanco */
+  }
+//Colores Container DIV   
+  #container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    max-width: 500px;  /* Set a maximum width for larger screens */
+    width: 100%;       /* The container will take up 100% of the width on smaller screens */
+    margin: 0 auto;    /* Center the container horizontally */
+  }
+
+  #container ion-input {
+    border: 1px solid #4a4a4a;  /* Custom border for unfocused state */
+    margin-bottom: 20px; /* Espacio entre los campos de entrada */
+  }
+
+  #container ion-input:focus {
+    border: 2px solid #00bfff;  /* Custom border for unfocused state */
+  }
+  
